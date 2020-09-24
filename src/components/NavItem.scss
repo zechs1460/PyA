@@ -1,0 +1,19 @@
+.nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white !important;
+  text-shadow: 0 0 6px rgb(0, 0, 0); /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#000000,Strength=4); /* IE<10 */
+  @include heading-font;
+  &.active,
+  &:hover {
+    color: $primary !important;
+  }
+}
+@media (min-width: 992px) {
+  .nav-link {
+    padding: 1.1em 1em !important;
+  }
+}
