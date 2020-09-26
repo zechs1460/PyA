@@ -20,7 +20,7 @@ teamMember: [
   },
   {
     imageFileName: "team/3.jpg",
-    header: "Yancy",
+    header: "Yantzie Ruiz",
     subheader: "Senior Analyst",
     social: {
     }
