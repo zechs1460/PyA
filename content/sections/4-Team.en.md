@@ -6,15 +6,15 @@ content: ""
 teamMember: [
   {
     imageFileName: "team/1.jpg",
-    header: "Angel Perez",
+    header: "Angel Pérez",
     subheader: "Attorney",
     social: {
     }
   },
   {
     imageFileName: "team/2.jpg",
-    header: "Chickie",
-    subheader: "Administrative Secretary",
+    header: "Ana Pérez",
+    subheader: "Social Security Advocate",
     social: {
     }
   },

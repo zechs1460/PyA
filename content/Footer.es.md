@@ -1,5 +1,5 @@
 ---
-copyright: "Copyright © Oficinas Legales de Perez y Altieri 2020"
+copyright: "Copyright © Oficinas Legales de Perez y Altieri 2021"
 social: {
   facebook: "#",
 }
