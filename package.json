@@ -81,6 +81,7 @@
   "scripts": {
     "clean": "gatsby clean",
     "build": "gatsby build",
+    "cbuild": "gatsby clean && gatsby build",
     "dev": "gatsby develop",
     "cdev": "gatsby clean && gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
