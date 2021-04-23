@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-startbootstrap-agency",
-  "description": "gatsby version of startbootstrap-agency with i18n support",
+  "name": "PYA",
+  "description": "Official Website of Perez y Altieri Law Offices",
   "version": "0.1.0",
-  "author": "thundermiracle",
+  "author": "Joseph Claudio",
   "bugs": {
-    "url": "https://github.com/thundermiracle/gatsby-startbootstrap-agency/issues"
+    "url": ""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
