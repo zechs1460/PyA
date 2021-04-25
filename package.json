@@ -74,6 +74,7 @@
     "clean": "gatsby clean",
     "build": "gatsby build",
     "dev": "gatsby develop",
+    "cdev": "gatsby clean && gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "serve": "gatsby serve",
     "eslint": "eslint ./src",

@@ -35,6 +35,21 @@ const Contact = ({ className, frontmatter }) => {
           </a>
         </Col>
       </Row>
+      <Row>
+        <p> </p>
+      </Row>
+      <Row>
+        <p> </p>
+      </Row>
+      <Row>
+        <p> </p>
+      </Row>
+      <Row>
+        <p> </p>
+      </Row>
+      <Row>
+        <p> </p>
+      </Row>
     </PageSection>
   );
 };

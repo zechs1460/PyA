@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Perez y Altieri Official Site",
+  title: "Perez y Altieri",
   keywords: [
     "Social Security",
     "Disablity",
