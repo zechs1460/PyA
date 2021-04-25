@@ -1,14 +1,7 @@
 {
   "parser": "babel-eslint",
-  "extends": [
-    "airbnb",
-    "plugin:react/recommended",
-    "prettier",
-    "prettier/react"
-  ],
-  "plugins": [
-    "react-hooks"
-  ],
+  "extends": ["airbnb", "plugin:react/recommended", "prettier"],
+  "plugins": ["react-hooks"],
   "env": {
     "browser": true,
     "es6": true,
@@ -22,10 +15,7 @@
     "func-names": 0,
     "global-require": 0,
     "import/no-dynamic-require": 0,
-    "import/no-extraneous-dependencies": [
-      2,
-      {}
-    ],
+    "import/no-extraneous-dependencies": [2, {}],
     "jsx-a11y/anchor-is-valid": 0,
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/href-no-hash": 0,
@@ -57,9 +47,7 @@
   "settings": {
     "import/resolver": {
       "babel-module": {
-        "root": [
-          "./"
-        ]
+        "root": ["./"]
       }
     }
   }

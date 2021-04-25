@@ -44,8 +44,13 @@ module.exports = {
     },
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
-    "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-sharp",
+      options: {
+        checkSupportedExtensions: false,
+      },
+    },
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-sass",
@@ -55,15 +60,27 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-fonts",
+      resolve: "gatsby-omni-font-loader",
       options: {
-        fonts: [
-          `Droid+Serif`,
-          `Kaushan+Script`,
-          `Montserrat`,
-          `Roboto+Slab`
+        preconnect: ["https://fonts.gstatic.com"],
+        web: [
+          {
+            name: "Droid Sans",
+            file: "https://fonts.googleapis.com/css2?family=Droid+Sans&display=swap",
+          },
+          {
+            name: "Montserrat",
+            file: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
+          },
+          {
+            name: "Kaushan Script",
+            file: "https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap",
+          },
+          {
+            name: "Roboto Slab",
+            file: "https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap",
+          },
         ],
-        display: 'swap'
       },
     },
     {
