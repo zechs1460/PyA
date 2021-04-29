@@ -7,21 +7,21 @@ teamMember: [
   {
     imageFileName: "team/1.jpg",
     header: "Angel Pérez",
-    subheader: "Attorney",
+    subheader: "",
     social: {
     }
   },
   {
     imageFileName: "team/2.jpg",
     header: "Ana Pérez",
-    subheader: "Social Security Advocate",
+    subheader: "",
     social: {
     }
   },
   {
     imageFileName: "team/3.jpg",
     header: "Yantzie Ruiz",
-    subheader: "Senior Analyst",
+    subheader: "",
     social: {
     }
   },

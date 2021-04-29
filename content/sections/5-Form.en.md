@@ -8,5 +8,10 @@ portfolios: [
     header: "SSN 1696",
     subheader: "Sign and bring with you",
   },
+  {
+    imageFileName: "forms/Contract.jpg",
+    header: "Contract",
+    subheader: "Sign and bring with you",
+  },
 ]
 ---

@@ -4,19 +4,19 @@ header: "What We Can Do For You"
 subheader: "Since applying for Social Security disability benefits can be a difficult process, a disability attorney or advocate may increase your chances of being awarded benefits by helping accurately and favorably complete the complex paperwork, ensuring that all deadlines are met, and providing you with representation at a hearing."
 services: [
   {
-    iconName: "ShoppingCartIcon",
-    header: "Application Process",
-    content: "You can file your initial claim for disability benefits either online, over the phone or in person at your local Social Security Field Office. Over 60% of initial claims are denied. Hiring a disability lawyer improves your chances of winning your Social Security disability claim, whether you've already applied and been denied or you have yet to file your initial disability application."
-  },
-  {
     iconName: "LaptopIcon",
-    header: "Appeals Process",
-    content: "You can file your initial claim for disability benefits either online, over the phone or in person at your local Social Security Field Office. Over 60% of initial claims are denied. Hiring a disability lawyer improves your chances of winning your Social Security disability claim, whether you've already applied and been denied or you have yet to file your initial disability application. In a system where 60% of all disability claims are denied at the initial application level, it's important to use all the resources at your disposal to win your claim at the disability hearing, where you have the best chance of getting approved."
+    header: "Social Security Application",
+    content: "We can file your initial claim for disability benefits for you. Be aware that over 60% of initial claims are denied. Hiring a disability lawyer improves your chances of winning your Social Security disability claim, whether you've already applied and been denied or you have yet to file your initial disability application."
   },
   {
-    iconName: "LockIcon",
-    header: "Eligibility For Benefits",
-    content: "To qualify for Social Security disability, you must meet two sets of eligibility requirements. First, you must be found medically eligible for benefits—that is, Social Security must find that you're too physically or mentally disabled to work a full-time job. (Also, you must not be working a significant amount of time when you apply.) Second, you must have either worked enough years to be 'insured' under the Social Security Disability Insurance (SSDI) program or you must have very low income and assets to qualify for the Supplemental Security Income (SSI) program."
+    iconName: "RedoIcon",
+    header: "Social Security Appeal",
+    content: "If your Social Security benefits or Supplemental Security Income (SSI) was recently denied, we can request an appeal. We can request an appeal online for a reconsideration, a hearing by an administrative law judge, or a review by the Appeals Council."
+  },
+  {
+    iconName: "CertificateIcon",
+    header: "Eligibility For Retirement Benefits",
+    content: "We can help you get your retirement benefits. Retirement requires a lot of planning and consideration. In addition to finances, you need to think about when and where you’ll retire.  We'll explain all the things you should know before retiring, and start the process for you."
   }
 ]
 ---
