@@ -1,6 +1,6 @@
 ---
-anchor: "Team"
-header: "Our Amazing Team"
+anchor: "Equipo"
+header: "Nuestro increíble equipo"
 subheader: ""
 content: ""
 teamMember: [

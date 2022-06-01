@@ -1,4 +1,4 @@
 ---
 brand: "Perez y Altieri"
-menuText: "Menu "
+menuText: "Menú "
 ---

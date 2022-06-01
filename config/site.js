@@ -1,21 +1,21 @@
 module.exports = {
-  title: "Gatsyby Startbootstrap Agency",
+  title: "Perez y Altieri",
   keywords: [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency",
+    "Social Security",
+    "Disablity",
+				   
+			  
+		   
+			 
+				
+							
   ],
-  description: "gatsby version of startbootstrap-agency with i18n support.",
-  author: "thundermiracle",
+  description: "Perez y Altieri Official Site.",
+  author: "Jojo",
   trackingId: "UA-119418003-5",
-  defaultLang: "en",
+  defaultLang: "es",
   langTextMap: {
     en: "English",
-    ja: "日本語",
+    es: "Español",
   },
 };

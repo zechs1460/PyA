@@ -1,3 +1,9 @@
+<h1>MEMOS - </h1>
+  <ul>
+    <li>If you want to implement the forms section again, you need to add the 'portfolio' section back into the 'frontmatter' section of top-index.jsx</li>
+    <li>-- It seems the easy way to do it would be to show the jpeg as thumbnails that once clicked, lead to PDFs</li>
+  </ul>
+
 <h1 align="center">
   Gatsyby startbootstrap-agency
 </h1>
