@@ -35,8 +35,7 @@ const Footer = ({ frontmatter }) => {
           <Col lg={4} className="text-lg-right">
             <a className="mr-3" href={privacyHref}>
               {privacyText}
-            </a>
-            <a href={termsHref}>{termsText}</a>
+            </a> | <a href={termsHref}>{termsText}</a>
           </Col>
         </Row>
       </Container>
