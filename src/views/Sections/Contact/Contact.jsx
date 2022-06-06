@@ -12,7 +12,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email, LFLabelMessage, LFMessagePlaceholder, LFSend } = frontmatter;
+  const { anchor, header, subheader, telephone, email, LFLabelMessage, messagePlaceholder, LFSend } = frontmatter;
 
   const encode = (data) => {
     return Object.keys(data)
@@ -43,38 +43,38 @@ const Contact = ({ className, frontmatter }) => {
 
         <Formik
           initialValues={{
-            LFname: '',
-            LFemail: '',
-            LFmessage: '',
+            name: '',
+            email: '',
+            message: '',
           }}
           onSubmit={
             (values, actions) => { fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: encode({ "form-name": "SSN-Lead-Form", ...values }) }).then(() => { alert('Success'); actions.resetForm() }).catch(() => { alert('Error'); }).finally(() => actions.setSubmitting(false)) }}
           validate={values => {
-            const LFemailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+            const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
             const errors = {};
-            if (!values.LFname) {
-              errors.LFname = '*'
+            if (!values.name) {
+              errors.name = '*'
             }
-            if (!values.LFemail || !LFemailRegex.test(values.LFemail)) {
-              errors.LFemail = '*'
+            if (!values.email || !emailRegex.test(values.email)) {
+              errors.email = '*'
             }
-            if (!values.LFmessage) {
-              errors.LFmessage = '*'
+            if (!values.message) {
+              errors.message = '*'
             }
             return errors;
           }}
         >
           <Form name="SSN-Lead-Form" className="vertical-menu" data-netlify={true}>
             { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-            <label htmlFor="LFname" className="vertical-menu h6">{LFLabelMessage}:</label>
+            <label htmlFor="name" className="vertical-menu h6">{LFLabelMessage}:</label>
             <Field className="vertical-menu" name="name" placeholder="Jane" />
-            <ErrorMessage name="LFname" />
+            <ErrorMessage name="name" />
 
             <Field className="vertical-menu" name="email" placeholder="jane@acme.com" />
-            <ErrorMessage name="LFemail" />
+            <ErrorMessage name="email" />
 
-            <Field className="vertical-menu" name="message" component="textarea" placeholder={LFMessagePlaceholder} />
-            <ErrorMessage name="LFmessage" />
+            <Field className="vertical-menu" name="message" component="textarea" placeholder={messagePlaceholder} />
+            <ErrorMessage name="message" />
 
             <button className="vertical-menu" type="submit">{LFSend}</button>
           </Form>
