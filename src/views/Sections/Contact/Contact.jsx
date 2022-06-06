@@ -12,7 +12,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email, LFLabelMessage, LFmessagePlaceholder, LFSend } = frontmatter;
+  const { anchor, header, subheader, telephone, email, LFLabelMessage, LFMessagePlaceholder, LFSend } = frontmatter;
 
   const encode = (data) => {
     return Object.keys(data)
@@ -73,7 +73,7 @@ const Contact = ({ className, frontmatter }) => {
             <Field className="vertical-menu" name="email" placeholder="jane@acme.com" />
             <ErrorMessage name="email" />
 
-            <Field className="vertical-menu" name="message" component="textarea" placeholder={LFmessagePlaceholder} />
+            <Field className="vertical-menu" name="message" component="textarea" placeholder={LFMessagePlaceholder} />
             <ErrorMessage name="message" />
 
             <button className="vertical-menu" type="submit">{LFSend}</button>
