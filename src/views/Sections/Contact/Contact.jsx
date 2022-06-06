@@ -12,7 +12,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email, LFLabelName, LFLabelEmail, LFLabelMessage, LFMessagePlaceholder, LFSend } = frontmatter;
+  const { anchor, header, subheader, telephone, email, LFLabelMessage, LFMessagePlaceholder, LFSend } = frontmatter;
 
   const encode = (data) => {
     return Object.keys(data)
@@ -21,29 +21,25 @@ const Contact = ({ className, frontmatter }) => {
   }
   return (
     <PageSection className={className} id={anchor}>
+
       <Row className="justify-content-center">
+
         <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
           <p className="text-muted mb-5">{subheader}</p>
         </Col>
+
       </Row>
+
       <Row>
+
         <Col lg={4} className="ms-auto text-center">
           <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
           <div className="d-block" href={`tel:${telephone}`}>
             {telephone}
           </div>
         </Col>
-        <Col lg={4} className="me-auto text-center">
-          <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
-          <a className="d-block" href={`mailto:${email}`}>
-            {email}
-          </a>
-        </Col>
-
-
-
 
         <Formik
           initialValues={{
@@ -70,27 +66,26 @@ const Contact = ({ className, frontmatter }) => {
         >
           <Form name="contact-demo" className="vertical-menu" data-netlify={true}>
             { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-            <label htmlFor="LFname" className="vertical-menu">{LFLabelName}:</label>
+            <label htmlFor="LFname" className="vertical-menu h6">{LFLabelMessage}:</label>
             <Field className="vertical-menu" name="LFname" placeholder="Jane" />
-            <ErrorMessage style={{ color: "red" }} name="LFname" />
+            <ErrorMessage name="LFname" />
 
-            { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-            <label htmlFor="LFemail" className="vertical-menu">{LFLabelEmail}: </label>
             <Field className="vertical-menu" name="LFemail" placeholder="jane@acme.com" />
-            <ErrorMessage style={{ color: "red" }} name="LFemail" />
+            <ErrorMessage name="LFemail" />
 
-            { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-            <label htmlFor="LFmessage" className="vertical-menu">{LFLabelMessage}: </label>
             <Field className="vertical-menu" name="LFmessage" component="textarea" placeholder={LFMessagePlaceholder} />
-            <ErrorMessage style={{ color: "red" }} name="LFmessage" />
+            <ErrorMessage name="LFmessage" />
 
             <button className="vertical-menu" type="submit">{LFSend}</button>
           </Form>
         </Formik>
 
-
-
-
+        <Col lg={4} className="me-auto text-center">
+          <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
+          <a className="d-block" href={`mailto:${email}`}>
+            {email}
+          </a>
+        </Col>
 
       </Row>
     </PageSection>

@@ -6,7 +6,7 @@ telephone: 787-459-4730
 email: PerezAltieriLaw@gmail.com
 LFLabelName: Name
 LFLabelEmail: Email
-LFLabelMessage: Message
+LFLabelMessage: Message us
 LFMessagePlaceholder: What can we do for you?
 LFSend: Send
 ---

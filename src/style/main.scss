@@ -7,6 +7,10 @@ body {
   @include body-font;
 }
 
+a {
+  text-shadow: 2px 2px 2px #222222;
+}
+
 p {
   line-height: 1.75;
 }
@@ -94,14 +98,15 @@ img::-moz-selection {
   /* Add some padding */
 }
 
+//The actual input fields themselves:
+.vertical-menu input {
+  margin-bottom: 10px;
+}
+
 .vertical-menu button {
   color: black;
   /* Black text color */
   margin-top: 18px;
   /* Add some padding */
   margin-bottom: 100px;
-}
-
-.ErrorMessage {
-  color: red !important;
 }

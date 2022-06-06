@@ -73,8 +73,6 @@ export const query = graphql`
             }
             subheader
           }
-          LFLabelName
-          LFLabelEmail
           LFLabelMessage
           LFMessagePlaceholder
           LFSend
