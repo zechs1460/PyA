@@ -87,6 +87,7 @@
     "eslint": "eslint ./src",
     "test": "cross-env NODE_ENV=test yarn run eslint",
     "testbuild": "yarn test && yarn build",
-    "git": "git add * && git commit -m 'Auto' && git push"
+    "git": "git add * && git commit -m 'Auto' && git push",
+    "full": "gatsby clean && gatsby build && git add * && git commit -m 'Auto' && git push && gatsby develop"
   }
 }
