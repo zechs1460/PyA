@@ -34,10 +34,6 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-				   
-				
-						 
-		   
           content
           copyright
           header
@@ -46,15 +42,16 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           menuText
-          
           privacyHref
           privacyText
+
           services {
             content
             header
             iconName
             imageFileName
           }
+
           social {
             facebook
             github
@@ -63,6 +60,7 @@ export const query = graphql`
             twitter
           }
           subheader
+
           teamMember {
             header
             imageFileName
@@ -75,18 +73,17 @@ export const query = graphql`
             }
             subheader
           }
+          LFLabelName
+          LFLabelEmail
+          LFLabelMessage
+          LFMessagePlaceholder
+          LFSend
           telephone
           termsHref
           termsText
           title
-					
-				   
-				  
-						
-						 
-					 
-		   
         }
+
         fields {
           fileName
           directoryName

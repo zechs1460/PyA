@@ -12,7 +12,7 @@ p {
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $primary  !important;
 }
 
 h1,
@@ -65,6 +65,7 @@ img::-moz-selection {
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
+
   &:active,
   &:focus,
   &:hover {
@@ -72,8 +73,35 @@ img::-moz-selection {
     border-color: darken($primary, 7.5%) !important;
     color: white;
   }
+
   &:active,
   &:focus {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   }
+}
+
+.vertical-menu {
+  width: 250px;
+  /* Set a width if you like */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vertical-menu label {
+  color: black;
+  /* Black text color */
+  padding-top: 18px;
+  /* Add some padding */
+}
+
+.vertical-menu button {
+  color: black;
+  /* Black text color */
+  margin-top: 18px;
+  /* Add some padding */
+  margin-bottom: 100px;
+}
+
+.ErrorMessage {
+  color: red !important;
 }

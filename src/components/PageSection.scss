@@ -1,6 +1,13 @@
 .page-section {
   padding: 100px 0;
+  //background-color: blue;
 }
+
+.page-section:nth-child(5) {
+  margin-bottom: -10%;
+  //background-color: Red;
+}
+
 @media (min-width: 768px) {
   .page-section {
     padding: 150px 0;
