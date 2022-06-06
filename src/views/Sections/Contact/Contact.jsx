@@ -48,7 +48,7 @@ const Contact = ({ className, frontmatter }) => {
             LFmessage: '',
           }}
           onSubmit={
-            (values, actions) => { fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: encode({ "form-name": "contact-demo", ...values }) }).then(() => { alert('Success'); actions.resetForm() }).catch(() => { alert('Error'); }).finally(() => actions.setSubmitting(false)) }}
+            (values, actions) => { fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: encode({ "form-name": "SSN-Lead-Form", ...values }) }).then(() => { alert('Success'); actions.resetForm() }).catch(() => { alert('Error'); }).finally(() => actions.setSubmitting(false)) }}
           validate={values => {
             const LFemailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
             const errors = {};
@@ -64,16 +64,16 @@ const Contact = ({ className, frontmatter }) => {
             return errors;
           }}
         >
-          <Form name="contact-demo" className="vertical-menu" data-netlify={true}>
+          <Form name="SSN-Lead-Form" className="vertical-menu" data-netlify={true}>
             { /* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="LFname" className="vertical-menu h6">{LFLabelMessage}:</label>
-            <Field className="vertical-menu" name="LFname" placeholder="Jane" />
+            <Field className="vertical-menu" name="name" placeholder="Jane" />
             <ErrorMessage name="LFname" />
 
-            <Field className="vertical-menu" name="LFemail" placeholder="jane@acme.com" />
+            <Field className="vertical-menu" name="email" placeholder="jane@acme.com" />
             <ErrorMessage name="LFemail" />
 
-            <Field className="vertical-menu" name="LFmessage" component="textarea" placeholder={LFMessagePlaceholder} />
+            <Field className="vertical-menu" name="message" component="textarea" placeholder={LFMessagePlaceholder} />
             <ErrorMessage name="LFmessage" />
 
             <button className="vertical-menu" type="submit">{LFSend}</button>
